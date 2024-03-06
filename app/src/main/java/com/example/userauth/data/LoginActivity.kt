@@ -1,3 +1,4 @@
+// LoginActivity.kt
 package com.example.userauth.data
 
 import android.content.Intent
@@ -34,8 +35,8 @@ class LoginActivity : AppCompatActivity() {
             val password = editTextPassword.text.toString()
 
             if (username == "admin" && password == "password") {
-                val intent = Intent(this, SecondActivity::class.java)
-                intent.putExtra("username", username)
+                WelcomeActivity.username = username
+                val intent = Intent(this, WelcomeActivity::class.java)
                 startActivity(intent)
                 finish()
             }

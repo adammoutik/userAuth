@@ -1,3 +1,4 @@
+// MainActivity.kt
 package com.example.userauth
 
 import android.os.Bundle
@@ -54,16 +55,13 @@ fun LoginForm() {
     }
 }
 
-
 fun HandleLogin(username: String, password: String) {
     val predefinedUsername = "admin"
     val predefinedPassword = "password"
 
     if (username == predefinedUsername && password == predefinedPassword) {
-
         println("Login successful!")
     } else {
-
         println("Invalid credentials. Please try again.")
     }
 }
